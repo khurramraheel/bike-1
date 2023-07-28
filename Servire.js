@@ -11,7 +11,7 @@ const nodemailer = require("nodemailer");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './servire/uploadFile')
+    cb(null, './uploadFile')
   },
   filename: function (req, file, cb) {
     
@@ -23,7 +23,7 @@ const upload = multer({ storage: storage })
 
 const storage_2 = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './servire/uploadFile')
+    cb(null, './uploadFile')
   },
   filename: function (req, file, cb) {
     
